@@ -1,7 +1,7 @@
 # xtalk.py-troubleshooting
 Troubleshooting problem and install speech-to-rag xtalk.py
-This is for people that don't know how to get it work are "noob" (that don't know anything about python).
-More advance user will find other way but this is (I think) the easiest.
+- This is for people that don't know how to get it work and are "noob" (that don't know anything about python).
+- More advance user will find other way but this is (I think) the easiest.
 
 Before starting :
 
