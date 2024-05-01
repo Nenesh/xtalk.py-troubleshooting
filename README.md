@@ -18,7 +18,7 @@ https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Windows&targ
 
 4°/ I make it run without problem with Python 3.10. Should work fine with python 3.11 (but not tested). DON'T USE PYTHON 3.12.
 
-5°/ Install GIT if you don't already have it https://git-scm.com/downloads
+5°/ Install GIT and GIT-LFS if you don't already have them https://git-scm.com/downloads & https://git-lfs.com/
 
 6°/ Use VScode please. https://code.visualstudio.com/
 
