@@ -20,6 +20,8 @@ https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Windows&targ
 
 5°/ Install GIT if you don't already have it https://git-scm.com/downloads
 
+6°/ Use VScode please. https://code.visualstudio.com/
+
 
 ### How to install:
 
@@ -28,22 +30,36 @@ Use "-" or "_" instead of space . (eg: c:/folder/folder name here/ => c:/folder/
 2. In the search bar on top of the windows
 ![alt text](https://imgur.com/DR0IY2X.png) 
 click on the bar text and type "cmd".
-That will open you command prompt directly on this folder.
+That will open your command prompt directly on this folder.
 3. git clone https://github.com/All-About-AI-YouTube/speech-to-rag.git
 4. cd speech-to-rag
 5. git clone https://huggingface.co/coqui/XTTS-v2
-6. conda create -n speechtorag python=3.10
+6. On windows, in your folder "speech-to-rag", right click and "Open with Code"
+![alt text](https://i.imgur.com/fLSaYP1.png) 
+7. In Vscode, open a new terminal (on top, Terminal > Open New Terminal) and type :
+conda create -n speechtorag python=3.10
 - You can remplace "speechtorag" with whatever name you want for your env name. DON'T USE SPACE.
 - python=3.10 is the version of python your environment will be. I highly recommend to use 3.10 because I know it work with this version.
-6. conda activate speechtorag
+8. conda activate speechtorag
   - If you have change the environment name in conda create, change it here too.
-7. pip install -r requirements.txt
-8. pip install torch==2.1.2+cu118 torchaudio==2.1.2+cu118 --index-url https://download.pytorch.org/whl/cu118
+9. pip install -r requirements.txt
+10. pip install torch==2.1.2+cu118 torchaudio==2.1.2+cu118 --index-url https://download.pytorch.org/whl/cu118
 - That will remplace your toch with a CUDA 11.8 compatible version.
 
 ### How to setup:
 
 The xtalk.py script have some problems, the easiest way to fix them is to remplace xtalk.py with the one from this repo.
-1. Download th
+1. Download the xtalk_fix.py and place it in your speech-to-rag folder
+![alt text](https://i.imgur.com/7DFb99l.png)
+- I fix the relative path, rework 2 variables to make it easiest to use, add some comment to help you understand the code and delet some unnecessary import.
+2. In Vscode, go to the xtalk_fix.py file.
+3. In line 21, setup the faster_whisper model (default is "medium" should work fine for 90% of people)
+4. In line 25, this is the language of the TTS.
+5. In line 26, you can change the speed of the TTS (1.2 is normal speaking speed).
+5. In line 27, this is the reference voice (the voice of your TTS).
+  - You can change it with whatever voice you want, but the file need to be a 24000Hz or 44100Hz .wav file for best result. (Use audacity to change the format of your file simply).
+  - Ones you have the .wav file, just drop it in folder speech-to-rag/XTTS-v2/samples
+  - Change the name in the variable (default is audio_file_pth2 = "./XTTS-v2/samples/en_sample.wav", if your file name caroline.wav, then the variable should look like this : audio_file_pth2 = "./XTTS-v2/samples/caroline.wav"
 
+### Now just run xtalk_fix.py
 
