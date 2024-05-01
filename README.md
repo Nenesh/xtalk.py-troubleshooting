@@ -63,3 +63,8 @@ The xtalk.py script have some problems, the easiest way to fix them is to rempla
 
 ### Now just launch LM Studio Server and run xtalk_fix.py
 
+Edit :  If you get this error : 
+RuntimeError: Library cublas64_11.dll is not found or cannot be loaded
+- Go to https://github.com/Purfview/whisper-standalone-win/releases/tag/libs
+- Download the zip "cuBLAS.and.cuDNN_CUDA11_win_v2.zip"
+- unzip it to C:\Windows\System32
