@@ -35,7 +35,8 @@ That will open your command prompt directly on this folder.
 4. cd speech-to-rag
 5. git clone https://huggingface.co/coqui/XTTS-v2
 6. On windows, in your folder "speech-to-rag", right click and "Open with Code"
-![alt text](https://i.imgur.com/fLSaYP1.png) 
+![alt text](https://i.imgur.com/fLSaYP1.png)
+If you don't have "Open with code", just open Vscode and drag/drop speech-to-rag in it.
 7. In Vscode, open a new terminal (on top, Terminal > Open New Terminal) and type :
 conda create -n speechtorag python=3.10
 - You can remplace "speechtorag" with whatever name you want for your env name. DON'T USE SPACE.
