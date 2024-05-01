@@ -61,5 +61,5 @@ The xtalk.py script have some problems, the easiest way to fix them is to rempla
   - Ones you have the .wav file, just drop it in folder speech-to-rag/XTTS-v2/samples
   - Change the name in the variable (default is audio_file_pth2 = "./XTTS-v2/samples/en_sample.wav", if your file name caroline.wav, then the variable should look like this : audio_file_pth2 = "./XTTS-v2/samples/caroline.wav"
 
-### Now just run xtalk_fix.py
+### Now just launch LM Studio Server and run xtalk_fix.py
 
