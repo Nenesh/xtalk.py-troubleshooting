@@ -44,7 +44,7 @@ conda create -n speechtorag python=3.10
 8. conda activate speechtorag
   - If you have change the environment name in conda create, change it here too.
 9. pip install -r requirements.txt
-10. pip install torch==2.1.2+cu118 torchaudio==2.1.2+cu118 --index-url https://download.pytorch.org/whl/cu118
+10. pip install torch==2.1.2+cu118 torchvision==0.16.2+cu118 torchaudio==2.1.2+cu118 --index-url https://download.pytorch.org/whl/cu118
 - That will remplace your toch with a CUDA 11.8 compatible version.
 
 ### How to setup:
